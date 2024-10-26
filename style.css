@@ -27,6 +27,16 @@ body {
   display: none;
 
 }
+@keyframes appear{
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 .bg-element{
   top: -20px;
   width: 100%;
@@ -64,6 +74,8 @@ body {
   margin-right: 60px;
   margin-top: 30px;
   height: 100vh;
+  
+
 }
 .hero header {
   display: flex;
@@ -117,11 +129,33 @@ body {
   line-height: normal;
   letter-spacing: 2.16px;
 }
+/* .work, .about{
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  padding: 1rem 6rem 4rem 6rem;
+  border-radius: 20px ;
+  background-image: linear-gradient(120deg, rgba(255,255,255,0.1), rgba(38,38,38,0.05));
+
+} */
+.work,.about,.contact{
+  animation: appear 2s linear;
+  animation-timeline: view() ;
+  animation-range:entry 0% cover 40%;
+}
+/* .contact{
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  padding: 1rem 6rem 4rem 6rem;
+  border-radius: 20px ;
+  background-image: linear-gradient(120deg, rgba(255,255,255,0.1), rgba(38,38,38,0.05));
+  margin-bottom: 3rem;
+} */
 .work {
   margin-left: 60px;
   margin-right: 60px;
   margin-top: 30px;
   height: 119vh;
+  
 }
 .work span {
   font-weight: var(--heading-weight);
@@ -136,13 +170,33 @@ body {
   justify-content: space-between;
   column-gap: 0px;
   row-gap: 45px;
+  
 }
+
 .work .work-gallery .img {
   margin-top: 45px;
-  background-color: #b9b9b9;
+  background-size: cover;
   width: 466px;
+  border-radius: 20px;
   height: 301px;
   flex-shrink: 0;
+  transition: 0.2s ease-in-out;
+}
+.work .work-gallery .img:hover{
+  transform: scale(1.05);
+  opacity: 70%;
+}
+.work .work-gallery .gallery-1{
+  background-image: url(money\ manage.jpg);
+}
+.work .work-gallery .gallery-2{
+  background-image: url(tictactoe.jpg);
+}
+.work .work-gallery .gallery-3{
+  background-image: url(desktop-cleaner.jpg);
+}
+.work .work-gallery .gallery-4{
+  background-image:url(gym\ website.jpg) ;
 }
 .about {
   margin-left: 60px;
@@ -183,7 +237,7 @@ body {
   margin-left: 60px;
   margin-right: 60px;
   margin-top: 30px;
-  height: 97vh;
+  height: 80vh;
 
 }
 
@@ -365,5 +419,22 @@ letter-spacing: 0.81px;
   }
   .contact ul li svg{
     margin-top: 1rem;
+  }
+}
+@media screen and (width > 500px) {
+  .contact{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 1rem 6rem 4rem 6rem;
+    border-radius: 20px ;
+    background-image: linear-gradient(120deg, rgba(255,255,255,0.1), rgba(38,38,38,0.8));
+    margin-bottom: 3rem;
+  }
+  .work, .about{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 1rem 6rem 4rem 6rem;
+    border-radius: 20px ;
+    background-image: linear-gradient(120deg, rgba(255,255,255,0.1), rgba(38,38,38,0.8));
   }
 }
