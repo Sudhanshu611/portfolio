@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --txt-color: white;
+  --bg-color: #262626;
+  --montserrat: Montserrat;
+  --heading-weight: 200;
+  --para-weight: 300;
+  --designation-weight: 500;
+}
+html{
+    scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  font-family: var(--montserrat);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.hero {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  height: 100vh;
+}
+.hero header {
+  display: flex;
+  justify-content: space-between;
+}
+.hero header .name {
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  font-size: 48px;
+  font-weight: var(--heading-weight);
+}
+.hero header .designation {
+  font-size: 20px;
+  font-weight: var(--designation-weight);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.hero header nav ul li {
+  margin-bottom: 8px;
+}
+.hero header nav ul li a {
+  padding: 10px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  margin-bottom: 1rem;
+  color: var(--txt-color);
+  font-weight: var(--heading-weight);
+  font-size: 32px;
+  transition: 0.2s ease-in-out;
+}
+.hero header nav ul li a:hover {
+  opacity: 30%;
+}
+.hero img {
+  display: none;
+}
+.hero p {
+  position: absolute;
+  font-size: 72px;
+  font-weight: var(--heading-weight);
+  bottom: 3rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 2.16px;
+}
+.work {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  height: 119vh;
+}
+.work span {
+  font-weight: var(--heading-weight);
+  font-size: 72px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.16px;
+}
+.work .work-gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  column-gap: 0px;
+  row-gap: 45px;
+}
+.work .work-gallery .img {
+  margin-top: 45px;
+  background-color: #b9b9b9;
+  width: 466px;
+  height: 301px;
+  flex-shrink: 0;
+}
+.about {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  height: 75vh;
+}
+.about span {
+  font-weight: var(--heading-weight);
+  font-size: 72px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.16px;
+}
+.about .content {
+  margin-top: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .content p {
+  color: var(--txt-color);
+  text-align: justify;
+  font-family: var(--montserrat);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: var(--para-weight);
+  line-height: normal;
+  letter-spacing: 0.72px;
+  width: 799px;
+}
+.about .content img {
+  width: 309px;
+  height: 309px;
+  border-radius: 154.5px;
+}
+.contact {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  height: 93vh;
+}
+.contact span {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 2.16px;
+}
+.contact ul li {
+  display: flex;
+  margin-top: 77.71px;
+  align-items: center;
+}
+.contact ul li span {
+  margin-left: 47px;
+  color: var(--txt-color);
+  font-family: var(--montserrat);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: var(--heading-weight);
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.contact ul li a {
+  color: var(--txt-color);
+  transition: 0.15s ease-in-out;
+}
+.contact ul li a:hover {
+  opacity: 30%;
+}
+@media screen and (max-width: 500px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+  }
+  .hero,
+  .work,
+  .about,
+  .contact {
+    margin-left: 39px;
+    margin-right: 39px;
+    margin-top: 36px;
+    width: 90%;
+    height: auto;
+  }
+   .hero {
+    height: 100vh;
+  }
+  /*.work {
+    height: auto;
+  } */
+  .hero header .designation {
+    display: none;
+  }
+  .hero header nav {
+    position: absolute;
+    right: 37px;
+  }
+  .hero header nav ul {
+    text-align: right;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.72px;
+  }
+  .hero header nav ul li a {
+    font-size: 24px;
+    text-align: left;
+  }
+  .hero p {
+    bottom: 2rem;
+    width: 322px;
+    font-size: 27px;
+    letter-spacing: 0.81px;
+  }
+
+  .work span {
+    font-size: 27px;
+    letter-spacing: 0.72px;
+  }
+  .work .work-gallery {
+    grid-template-columns: auto;
+  }
+  .work .work-gallery .img {
+    width: 348px;
+    height: 203px;
+  }
+  .about {
+    height: 100vh;
+  }
+  .about span {
+    font-size: 27px;
+    letter-spacing: 0.72px;
+  }
+  .about .content {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 0;
+    margin-right:37px ;
+    margin-left: auto;
+    /* direction: rtl; */
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  .about .content p {
+    font-size: 17px;
+    width: 350px;
+    letter-spacing: 0.51px;
+    display: block;
+    margin: 0 auto 5px;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  .about .content img {
+    display: block;
+    margin: 0 auto 5px;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    margin-top: 33px;
+    width: 130px;
+    height: 130px;
+  }
+  .contact {
+    display: block;
+    margin-left: 39px;
+    margin-right: 39px;
+    margin-top: 36px;
+    width: 90%;
+    height: 70vh;
+  }
+  .contact span{
+font-size: 27px;
+letter-spacing: 0.81px;
+  }
+  .contact ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 36px;
+  }
+  .contact ul li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .contact ul li svg{
+    width: 27px;
+    height: auto;
+  }
+  .contact ul li span{
+    margin-left: 28px;
+
+  }
+  .contact ul li a{
+    font-size: 18.5px;
+    letter-spacing: 0.555px;
+  }
+  .contact ul li svg{
+    margin-top: 1rem;
+  }
+}
