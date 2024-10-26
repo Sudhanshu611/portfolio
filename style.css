@@ -187,7 +187,7 @@ body {
   opacity: 70%;
 }
 .work .work-gallery .gallery-1{
-  background-image: url(money\ manage.jpg);
+  background-image: url(money-manage.jpg);
 }
 .work .work-gallery .gallery-2{
   background-image: url(tictactoe.jpg);
@@ -196,7 +196,7 @@ body {
   background-image: url(desktop-cleaner.jpg);
 }
 .work .work-gallery .gallery-4{
-  background-image:url(gym\ website.jpg) ;
+  background-image:url(gym-website.jpg) ;
 }
 .about {
   margin-left: 60px;
