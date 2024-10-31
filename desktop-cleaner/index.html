@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="desktop-cleaner-style.css">
+</head>
+<body>
+    <div class="scroll-watcher">
+    </div>
+    <div class="bg-element"></div>
+    <main>
+        <h1>Desktop Cleaner: Simplifying Digital Organization with Automation</h1>
+        <p>As part of my portfolio, I’m excited to showcase Desktop Cleaner, a Python-based automation tool designed to declutter and organize desktops by managing files based on custom criteria. Here’s an overview of the project, the process behind it, and my future development plans for it:</p>
+        <section class="key-features">
+            <h2>Development Process & Key Features:</h2>
+            <ul>
+                <li>
+                    How I Made It:
+                <br>Creating Desktop Cleaner was a structured journey that began with identifying the problem of cluttered desktops and progressed through planning, development, testing, and UI design.
+                </li>
+
+                <li>Concept and Planning:
+                    <br>
+                    The goal was to create a simple, automated solution to enhance digital productivity by managing files effectively. Key priorities were simplicity, user-friendly design, and efficient performance.</li>
+                <li>Developing Core Functionalities:
+                    <br>
+                    I implemented file management tasks using Python's OS, Shutil, and Datetime libraries. Logging every action was crucial, so I added a logging mechanism to provide transparency for all file actions. Key features include:
+                    <ol>
+                        <li>Extension-Based Deletion: Targets files with specific extensions (e.g., .exe, .zip, .rar) for deletion, which is ideal for removing unnecessary installers or archives.</li>
+                        <li>Age-Based Deletion: Automatically deletes files older than a set number of days, reducing clutter without user intervention.</li>
+                        <li>Organized File Moving: Files are categorized by type—images, documents, videos, and music—and moved to designated folders, so users always know where to find what they need.</li>
+                    </ol>
+                </li>
+                <li>Building the Interface with Tkinter:
+                    <br>
+                    I developed a GUI using Tkinter to make it user-friendly, allowing users to set their preferences with ease. Features include:
+                    <ol>
+                        <li>Selection buttons for different folder destinations.</li>
+                        <li>A "Run" button to initiate the cleaning process.</li>
+                        <li>Visual feedback and alerts through labels and message boxes for a smooth user experience.</li>
+                    </ol>
+                </li>
+                <li>Testing & Debugging:
+                    <br>
+                    Desktop Cleaner was thoroughly tested with different file types and scenarios to ensure stability. The logging system was vital here, helping me identify issues and fine-tune the code for optimal performance.
+                </li>
+            </ul>
+        </section>
+        <section class="working">
+            <h2>How It Works:</h2>
+            <ol>
+                <li>Efficient Deletion: The tool identifies and deletes files based on file extensions (e.g., installers, archives) or last modified date, making it easy to clear out unnecessary or outdated files.</li>
+                <li>Automated File Sorting: Desktop Cleaner automatically moves files into pre-selected folders based on file type (e.g., images to Images folder, documents to Documents folder), significantly reducing the need for manual organization.</li>
+                <li>Action Logging: Every file deletion or movement is logged, allowing users to review past actions and confirm any file changes if necessary.</li>
+            </ol>
+        </section>
+        <section class="future-development">
+            <h2>Future Development:</h2>
+            <p>To take Desktop Cleaner even further, I plan to add the following enhancements:</p>
+            <ul>
+                <li>Advanced Sorting Options:
+                    <br> Custom rules for sorting and organizing files, allowing users more control over categorization by type, size, or access frequency.</li>
+                <li>
+                    Cloud Integration: 
+                    <br>Adding a feature to back up files to cloud storage before deletion or movement would support multi-device organization.
+                </li>
+                <li>
+                    Automated Scheduling: 
+                    <br>Users could set a preferred schedule to run Desktop Cleaner automatically at chosen intervals, maintaining an organized workspace with minimal effort.
+                </li>
+                <li>
+                    AI-Powered File Recognition: 
+                    <br>I plan to implement machine learning to help categorize files based on content, improving the accuracy and depth of sorting beyond simple file extensions.
+                </li>
+            </ul>
+        </section>
+        <section class="conclusion">
+            <h2>Conclusion:</h2>
+            <p>Working on Desktop Cleaner has been an enriching experience, allowing me to improve my skills in Python programming, file handling, and user interface design. As I continue developing it, I look forward to incorporating additional features and exploring new ways to support digital productivity through automation. This project has inspired me to further pursue automation solutions that simplify and enhance daily tasks!</p>
+        </section>
+    </main>
+    <section class="gallery">
+        <div class="image-gallery">
+            <img src="gallery/Screenshot 2024-10-31 113104.png" alt="">
+            <img src="gallery/Screenshot 2024-10-29 183842.png" alt="">
+            <img src="gallery/Screenshot 2024-10-29 183859.png" alt="">
+        </div>
+    </section>
+</body>
+</html>
