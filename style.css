@@ -171,7 +171,6 @@ body {
   width: 400px;
   border-radius: 20px;
   height: 250px;
-  flex-shrink: 0;
   transition: 0.2s ease-in-out;
 }
 .work .work-gallery .img:hover{
@@ -317,7 +316,7 @@ body {
   }
   .hero header nav {
     position: absolute;
-    right: 37px;
+    right: 39px;
   }
   .hero header nav ul {
     text-align: right;
@@ -331,14 +330,14 @@ body {
   }
   .hero p {
     bottom: 2rem;
-    width: 322px;
+    width: 90vw;
     font-size: 1.6875rem;
     letter-spacing: 0.81px;
   }
-.work{
-  padding: 1rem 0rem 4rem 0rem;
+  .work{
+    padding: 1rem 0rem 4rem 0rem;
 
-}
+  }
   .work span {
     font-size: 1.6875rem;
     letter-spacing: 0.72px;
@@ -348,8 +347,9 @@ body {
     margin-left: -39px;
   }
   .work .work-gallery .img {
-    width: 348px;
-    height: 203px;
+    width: 90vw;
+    height:59vw;
+    background-size: contain;
   }
   .about {
     height: auto;
@@ -372,7 +372,7 @@ body {
     font-size: 1.1rem;
     letter-spacing: 0.51px;
     display: block;
-    width: 70vw;
+    width: fit-content;
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
   }
