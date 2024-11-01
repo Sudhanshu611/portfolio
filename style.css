@@ -143,8 +143,8 @@ body {
   animation-range:entry 0% cover 40%;
 }
 .work {
-    padding: 1rem 4rem 4rem 4rem;
-    margin-left: 60px;
+  padding: 1rem 4rem 4rem 4rem;
+  margin-left: 60px;
   margin-right: 60px;
   margin-top: 30px;
   height: 100vh;
@@ -192,8 +192,8 @@ body {
   background-image:url(gym-website.jpg) ;
 }
 .about {
-    padding: 1rem 4rem 4rem 4rem;
-    margin-left: 60px;
+  padding: 1rem 4rem 4rem 4rem;
+  margin-left: 60px;
   margin-right: 60px;
   margin-top: 30px;
   height: 75vh;
@@ -283,26 +283,31 @@ body {
     height: 400%;
     position: absolute;
     z-index: -1000;
-    background-image: linear-gradient( to top,(38, 38, 38,0.6),rgba(38, 38, 38,0.6)),url('bg-element.jpg');
     background-size: cover;
-    mix-blend-mode: screen;
-    opacity: 50%;
   }
   .hero,
-  .work,
-  .about{
+  .work{
     margin-left: 39px;
     margin-right: 39px;
     margin-top: 36px;
     width: 90%;
     height: auto;
   }
+  .about{
+    padding: 1rem 0rem 4rem 0rem;
+  margin-left: 39px;
+  margin-right: 39px;
+  margin-top: 30px;
+  height: 75vh;
+  }
   .contact {
-    
-    margin-left: 50px;
+    margin-left: 39px;
+    margin-right: 39px;
     margin-top: 7rem;
     width: 90%;
-    height: 50vh;
+    height: 80vh;
+    padding: 1rem 0rem 4rem 0rem;
+
   }
    .hero {
     height: 100vh;
@@ -330,7 +335,10 @@ body {
     font-size: 27px;
     letter-spacing: 0.81px;
   }
+.work{
+  padding: 1rem 0rem 4rem 0rem;
 
+}
   .work span {
     font-size: 27px;
     letter-spacing: 0.72px;
@@ -346,7 +354,6 @@ body {
   .about {
     height: auto;
     margin-top: 7rem;
-
   }
   .about span {
     font-size: 27px;
@@ -354,20 +361,18 @@ body {
   }
   .about .content {
     margin-top: 36px;
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 0;
-    margin-right:37px ;
-    margin-left: auto;
+    display: block;
+    justify-items: center;
+    /* margin-right:39px ;
+    margin-left: 39px; */
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
   .about .content p {
-    font-size: 17px;
-    width: 350px;
+    font-size: 1.1rem;
     letter-spacing: 0.51px;
     display: block;
-    margin: 0 auto 5px;
+    width: 70vw;
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
   }
@@ -378,7 +383,7 @@ body {
     transform: rotate(-180deg);
     margin-top: 33px;
     width: 130px;
-    height: 130px;
+    height:130px;
   }
 
   .contact span{
@@ -427,14 +432,19 @@ letter-spacing: 0.81px;
     width: 100%;
     height: 470%;
     position: absolute;
-    box-sizing: border-box;
-    z-index: -1000;
     background-image: linear-gradient( to top,(38, 38, 38,0.6),rgba(38, 38, 38,0.6)),url('bg-element.jpg');
     background-size: cover;
     mix-blend-mode: screen;
     opacity: 50%;
   }
-  .hero,
+  .hero{
+    margin-left: 39px;
+    margin-right: 39px;
+    margin-top: 36px;
+    width: 90%;
+    height: auto;
+    padding: 0;
+  }
   .about{
     margin-left: 39px;
     margin-right: 39px;
