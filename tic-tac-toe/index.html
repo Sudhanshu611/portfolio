@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-element"></div>
+    <main>
+    
+        <h1>Tic-Tac-Toe: AI-Powered Game for Single-Player Fun</h1>
+
+        <h2>Project Overview</h2>
+        <p>The Tic-Tac-Toe project is a Python-based game designed for single-player gameplay against an AI-powered opponent. The game follows traditional Tic-Tac-Toe rules, allowing players to choose their symbol (either "X" or "0") and position their moves on a 3x3 grid. The opponent’s moves are generated randomly, making each game session unique.</p>
+    
+        <h2>How I Built It</h2>
+    
+        <h3>Game Logic and Validation</h3>
+        <ul>
+            <li>Developed core game functions such as <code>validate_position</code> and <code>game_checker</code>, ensuring valid moves and checking for win/draw conditions.</li>
+            <li>Integrated checks to prevent users and the AI from selecting previously chosen positions.</li>
+        </ul>
+    
+        <h3>AI Opponent</h3>
+        <ul>
+            <li>Designed the AI opponent's move logic using Python's <code>random.choice</code> function to select unoccupied spaces.</li>
+            <li>Optimized AI moves to prevent repetitive actions and ensure quick responses.</li>
+        </ul>
+    
+        <h3>User Interface</h3>
+        <ul>
+            <li>Built a text-based interface using print statements and formatted board output with clear symbols and spacing for readability.</li>
+            <li>Added a restart feature (<code>restart_game</code>) that allows players to reset the game and play again without restarting the script.</li>
+        </ul>
+    
+        <h3>Gameplay Flow</h3>
+        <ol>
+            <li><strong>Symbol Selection:</strong> Players choose "X" or "0" before starting.</li>
+            <li><strong>Move Selection:</strong> Players enter their desired position (1-9) on the board, with validation ensuring only valid moves are accepted.</li>
+            <li><strong>AI Response:</strong> The AI randomly selects from remaining positions and places its symbol.</li>
+            <li><strong>Game End:</strong> The game stops when a player wins, the opponent wins, or it’s a draw.</li>
+        </ol>
+    
+        <h2>Future Enhancements</h2>
+        <ul>
+            <li><strong>Smarter AI:</strong> Implementing an improved AI with mini-max algorithms to create a more challenging opponent.</li>
+            <li><strong>Graphical Interface:</strong> Upgrading from a console-based interface to a GUI, possibly with Tkinter or Pygame, to enhance user engagement.</li>
+            <li><strong>Difficulty Levels:</strong> Adding multiple difficulty levels to make the game accessible for beginners while challenging for experienced players.</li>
+        </ul>
+    
+        <h2>Conclusion</h2>
+        <p>This Tic-Tac-Toe project was a fun yet challenging experience in building interactive games with Python. It allowed me to explore game logic, validation, and basic AI principles, and it further reinforced my Python skills while working with loops, conditionals, and list-based board handling. This project has sparked ideas for more games and AI improvements, especially as I look to expand my skills in algorithm-based problem-solving.</p>
+    
+
+    <h2>Challenges & Solutions</h2>
+    <ul>
+        <li><strong>Data Consistency:</strong> Ensuring data accuracy was critical. By carefully managing data entry points and integrating clear functions for different tasks, the program effectively maintains consistency across transactions.</li>
+        <li><strong>File Handling:</strong> Managing file I/O operations required handling cases where files might not exist or could be corrupted. Exception handling was implemented to check for file existence and handle FileNotFound errors gracefully.</li>
+    </ul>
+
+    <h2>Outcome & Impact</h2>
+    <p>This project provided a highly accessible tool for managing finances, particularly for users who need a lightweight alternative to complex financial software. The system is flexible, allowing for quick logging and calculations without requiring an internet connection.</p>
+
+    <h2>Skills Demonstrated</h2>
+    <ul>
+        <li>Python Fundamentals and File I/O</li>
+        <li>OOP Concepts: Developed a class structure to encapsulate related functionality.</li>
+        <li>Excel Manipulation with Openpyxl: Achieved robust data management within an Excel environment.</li>
+    </ul>
+
+    <h2>Future Enhancements</h2>
+    <ul>
+        <li>Integrating graphical reports for better visualization of income and expense trends.</li>
+        <li>Adding password protection for sensitive financial data.</li>
+    </ul>
+
+    <p>This project showcases my proficiency in Python and file management, as well as my ability to create practical solutions with a strong focus on user needs and data accuracy.</p>
+</main>
+</body>
+</html>
